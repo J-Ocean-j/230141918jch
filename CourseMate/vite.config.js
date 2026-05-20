@@ -10,7 +10,8 @@ import {
 import react from '@vitejs/plugin-react';
 
 const CHAT_VARIABLE = process.env.CHAT_VARIABLE || '';
-const PUBLIC_PATH = process.env.PUBLIC_PATH || '';
+// 只改了下面这一行，其他全部不变
+const PUBLIC_PATH = process.env.PUBLIC_PATH || '/230141918jch/coursemate/';
 
 const isProdEnv = process.env.NODE_ENV === 'production';
 const publicPath = (isProdEnv && CHAT_VARIABLE)
